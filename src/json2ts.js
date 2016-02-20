@@ -68,7 +68,7 @@ var Json2Ts = (function () {
                 valueType.push("any[];");
             }
             else if (_.isArray(value[0])) {
-                for (var index = 0, length = value.length; index < length; index++) {
+                for (var index = 0, length_1 = value.length; index < length_1; index++) {
                     var element = value[index];
                     var valueTypeResult = this.detectMultiArrayTypes(element, valueType);
                     valueType.concat(valueTypeResult);
@@ -98,13 +98,13 @@ var Json2Ts = (function () {
     Json2Ts.prototype.getMultiArrayBrackets = function (content) {
         var jsonString = JSON.stringify(content);
         var brackets = "";
-        for (var index = 0, length = jsonString.length; index < length; index++) {
+        for (var index = 0, length_2 = jsonString.length; index < length_2; index++) {
             var element = jsonString[index];
             if (element === "[") {
                 brackets = brackets + "[]";
             }
             else {
-                index = length;
+                index = length_2;
             }
         }
         return brackets;
@@ -114,7 +114,7 @@ var Json2Ts = (function () {
             .replace(new RegExp("\"", "g"), "")
             .replace(new RegExp(",", "g"), "");
         var allKeys = _.allKeys(jsonContent);
-        for (var index = 0, length = allKeys.length; index < length; index++) {
+        for (var index = 0, length_3 = allKeys.length; index < length_3; index++) {
             var key = allKeys[index];
             if (_.contains(optionalKeys, key)) {
                 result = result.replace(new RegExp(key + ":", "g"), this.toLowerFirstLetter(key) + "?:");
