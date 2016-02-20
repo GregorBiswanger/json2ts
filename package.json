@@ -1,6 +1,6 @@
 {
   "name": "json2ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Convert a JSON to TypeScript interfaces.",
   "main": "index.js",
   "repository": {
