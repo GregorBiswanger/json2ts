@@ -3,6 +3,9 @@
   "version": "0.0.6",
   "description": "Convert a JSON to TypeScript interfaces.",
   "main": "index.js",
+  "repository": {
+      "url": "https://github.com/GregorBiswanger/json2ts"
+  },
   "scripts": {
     "test": "mocha --ui tdd"
   },
