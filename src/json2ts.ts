@@ -94,7 +94,7 @@ export class Json2Ts {
         return _.all(array.slice(1), _.partial(_.isEqual, array[0]));
     }
 
-    private getMultiArrayBrackets(content: string): string {
+    private getMultiArrayBrackets(content: string[]): string {
         let jsonString = JSON.stringify(content);
         let brackets = "";
 
