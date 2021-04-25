@@ -19,7 +19,11 @@ let result = json2ts.convert(jsonContent);
 
 ## As IDE Extension
 
-This module is used as IDE Extension for [Visual Studio Code](https://github.com/GregorBiswanger/VSCode-json2ts) and [Brackets](https://github.com/GregorBiswanger/Brackets-json2ts).
+This module is used as IDE Extension for 
+
+* [Visual Studio Code](https://github.com/GregorBiswanger/VSCode-json2ts)
+* [Brackets](https://github.com/GregorBiswanger/Brackets-json2ts)
+* [Vim](https://github.com/FuDesign2008/json2ts.vim)
 
 ![json2ts Screenshot](https://github.com/GregorBiswanger/VSCode-json2ts/blob/master/images/json2ts.gif?raw=true)
 
